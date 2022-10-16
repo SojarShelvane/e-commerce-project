@@ -10,7 +10,7 @@ function App() {
      <Beds/>
      <div>
       <div>
-        Cart details
+        Cart details comming soon
       </div>
      </div>
     </div>
