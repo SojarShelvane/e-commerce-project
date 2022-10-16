@@ -10,7 +10,12 @@ function App() {
      <Beds/>
      <div>
       <div>
-        Cart details comming soon
+        Cart details added
+        Cart details comming soon lskdfjsdlkjf lksdjflksdjlf lksdjflksdjlf
+        slkdjflksdjf
+        s;dfj;sd
+        sdfjds;letslkdfjldsjf
+        <span>slkjflkdsjflk</span>
       </div>
      </div>
     </div>
