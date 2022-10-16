@@ -4,7 +4,6 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import './Beds.css'
-import godrej1.jpg from 'src\pages\home\furnishing\bed images'
 const Beds = () => {
     let bedImages=[
         {
