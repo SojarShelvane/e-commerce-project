@@ -8,7 +8,11 @@ function App() {
     <div className="App">
      <Navbarmenu/>
      <Beds/>
-     {/* cart component comming soon */}
+     <div>
+      <div>
+        Cart details
+      </div>
+     </div>
     </div>
   );
 }
