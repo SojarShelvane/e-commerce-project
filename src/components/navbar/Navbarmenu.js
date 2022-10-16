@@ -21,7 +21,7 @@ const Navbarmenu = () => {
           <Navbar collapseOnSelect expand="md" bg="light" variant="dark">
             <Container>
               <Navbar.Brand href="#" className="text-dark">
-                Fantasy
+                Fantasy Project
               </Navbar.Brand>
               <Navbar.Toggle
                 aria-controls="responsive-navbar-nav"
