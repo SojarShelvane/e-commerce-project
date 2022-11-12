@@ -1,0 +1,56 @@
+
+.heading h1 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin: 8px 0 30px;
+  color: #433f3f;
+  position: relative;
+  display: inline-block;
+  padding: 0 0 14px;
+  line-height: 1;
+  
+}
+.heading h1::before{
+    position: absolute;
+    background-color: #070508;
+    height: 3px;
+    width: 70px;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+/* .womenAccessories{
+  position: absolute;
+   
+    margin-top: -182px;
+    font-size: 16px;
+    margin-left: 11px;
+}
+.womenpurse{
+    position: absolute;
+    margin-top: -158px;
+    font-size: 11px;
+    margin-left: 11px;
+
+}
+.arrowIcon{
+    position: absolute;
+    margin-top: -138px;
+    margin-left: 21px;
+    border: solid;
+    border-radius: 50px;
+} */
+.arrow{
+    display: inline !important;
+    border: 2px solid ;
+    border-radius: 50% ;
+    padding: 1px 5px 3px 5px !important;
+    background-color: #f8f2ea;
+    transition: all .3s ease 0s;
+}
+.single-banner{
+  overflow: hidden;
+}

@@ -5,13 +5,12 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  Row,
-  Col,
-  Dropdown,
-  DropdownButton,
-  ButtonGroup,
-} from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+import "E:/E-Commerce Project Development/shopping-website/fantasy-online-shopping/src/components/navbar/Navbarmenu.css";
+import Fashion from "./Header/fashion/Fashion";
+import Pages from "./Header/pagesHeader/Pages";
+import Home from "./Header/home/Home";
+import Usericon from "./Header/userIcon/Usericon";
 
 const Navbarmenu = () => {
   return (
@@ -30,89 +29,13 @@ const Navbarmenu = () => {
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto ">
                   <NavDropdown title="Home" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action3">
-                      Home Furnishings
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
-                      Living Room Furniture
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Kitchen And Dining
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
-                      Home Decor
-                    </NavDropdown.Item>
+                    <Home />
                   </NavDropdown>
                   <NavDropdown title="Fashion" id="navbarScrollingDropdown">
-                    <NavDropdown.Item href="#action3">
-                      Men's Top Wear
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-
-                    <NavDropdown.Item href="#action4">
-                      Men's Bottom Wear
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Women Ethenic
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-
-                    <NavDropdown.Item href="#action4">
-                      Women Western
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
-                      Men Footwear
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
-                      Women Footwear
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
-                      Watches And Accessories
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">Kids</NavDropdown.Item>
+                    <Fashion />
                   </NavDropdown>
                   <NavDropdown title="Pages" id="navbarScrollingDropdown">
-                    <NavDropdown.Item href="#action3">
-                      Wishlist
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-
-                    <NavDropdown.Item href="#action4">Cart</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Checkout
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-
-                    <NavDropdown.Item href="#action4">Account</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">Sign up</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">Sign in</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
-                      Forget Password
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
-                      Reset Password
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
-                      Privacy and Policy
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
-                      Comming Soon
-                    </NavDropdown.Item>
+                    <Pages />
                   </NavDropdown>
                   <Nav.Link href="#">About</Nav.Link>
                   <Nav.Link href="#">Contact</Nav.Link>
@@ -130,29 +53,16 @@ const Navbarmenu = () => {
             </Container>
           </Navbar>
         </Col>
-        <Col sm={3} xs={3} md={3} lg={3} className="pt-3 bg-light">
+        <Col sm={3} xs={3} md={3} lg={3} className="pt-3 bg-light ">
           <Row>
-            <Col sm={3} xs={3} md={3} lg={3}>
+            <Col sm={3} xs={3} md={3} lg={3} className=" cart pr-4">
               <span className="cart-count-wrapper">
-                <i className="fa fa-shopping-cart icon30 text-dark ml-2 mr-2 "></i>
+                <i className="fa fa-shopping-cart fa-lg icon30 text-dark ml-2 mr-2 "></i>
                 <span className="cart-count">8</span>
               </span>
             </Col>
             <Col sm={3} xs={3} md={3} lg={3}>
-              <Dropdown as={ButtonGroup}>
-                <Dropdown.Toggle id="dropdown-custom-1">
-                  <i className="fa fa-user icon30 text-dark ml-2 "></i>
-                </Dropdown.Toggle>
-                <Dropdown.Menu className="super-colors">
-                  <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                  <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                  <Dropdown.Item eventKey="3" active>
-                    Active Item
-                  </Dropdown.Item>
-                  <Dropdown.Divider />
-                  <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+             <Usericon />
             </Col>
           </Row>
         </Col>
